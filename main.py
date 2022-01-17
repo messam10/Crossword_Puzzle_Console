@@ -37,15 +37,26 @@ print("\t".join(crossword[4]))
 print("\t".join(crossword[5]))
 print("\n\n")
 
+# print("len ",len(crossword))
 for i in range(len(crossword)) :
+    print("i ",i)
     for z in range(len(crossword)) :
-        if newList[i]['word'] == max :
+        print("z ",z)
+        if newList[z]['word'] == max :
             listMax = list(max)
             if len(listMax) <= z :
                 word.crossword[i][z] = listMax[z]
+                print("\t".join(crossword[i]))
+            else :
+                word.crossword[i][z] = "#"
+                continue
         else :
             if len(words) < z :
-             word.crossword[i][z] = words[z]
+                word.crossword[i][z] = words[z]
+                print("\t".join(crossword[i]))
+            else :
+                word.crossword[i][z] = "#"
+                continue
 
 print("\t".join(crossword[0]))
 print("\t".join(crossword[1]))
