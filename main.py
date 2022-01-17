@@ -19,7 +19,7 @@ def simpleWord(num):
 for i in range(len(newList)):
     simpleWord(i)
     # print("",newList[i]['word'])
-    # print("Q{:d}) {:s}".format(i+1, newList[i]["question"]))
+    print("Q{:d}) {:s}".format(i+1, newList[i]["question"]))
     words = list(newList[i]['word'])
     # print(words)
 
